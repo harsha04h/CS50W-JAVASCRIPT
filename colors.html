@@ -1,0 +1,35 @@
+<!-- js can be used not just to manipulate html but also css of a web page -->
+<!-- in this code is repeated alot so to modify we will do changes that are done in modcolors.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Colors</title>
+        <script>
+            document.addEventListener('DOMContentLoaded',function(){
+                // change font color to red
+                document.querySelector('#red').onclick=function(){
+                   document.querySelector('#hello').style.color='red';
+                };
+
+                // change font color to blue
+                document.querySelector('#blue').onclick=function(){
+                   document.querySelector('#hello').style.color='blue';
+                };
+
+                // change font color to green
+                document.querySelector('#green').onclick=function(){
+                   document.querySelector('#hello').style.color='green';
+                };
+
+                
+            });
+        </script>
+    </head>
+    <body>
+        <h1 id="hello">Hello!</h1>
+        <button id="red">Red</button>
+        <button id="blue">Blue</button>
+        <button id="green">Green</button>
+    </body>
+</html>
